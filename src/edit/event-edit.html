@@ -1,0 +1,190 @@
+<div class="event-edit">
+    <div class="row">
+        <div class="input-field col s10 offset-s1">
+            <input id="event-edit-name" type="text" class="validate">
+            <label for="event-edit-name" data-error="wrong" data-success="right">Event Name</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s5 offset-s1">
+            <select>
+                <option value="0">Homework</option>
+                <option value="1">Project</option>
+                <option value="2">Quiz</option>
+                <option value="3">Test</option>
+                <option value="4">Extra Credit</option>
+                <option value="5">Meeting</option>
+                <option value="6">Event</option>
+            </select>
+            <label>Event Type</label>
+        </div>
+        <div class="input-field col s5">
+            <select id="ee-course">
+                <option value="1">None</option>
+                <option value="2">EGR223</option>
+                <option value="3">EGR226</option>
+            </select>
+            <label>Class Select</label>
+        </div>
+        <div class="input-field col s4 offset-s1">
+            <select>
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+            <label>Month</label>
+        </div>
+        <div class="input-field col s2">
+            <select>
+                <option value="1">1</option>
+                <option value="2" 2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select>
+            <label>Day</label>
+        </div>
+        <div class="input-field col s4">
+            <input id="event-edit-name" type="text" class="validate">
+            <label for="event-edit-name" data-error="wrong" data-success="right">Year</label>
+        </div>
+        <h6 class="col s3 offset-s1">Start:</h6>
+        <div class="input-field col s2">
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label>Hour</label>
+        </div>
+        <h4 class="col s1">:</h4>
+        <div class="input-field col s2">
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label>Minute</label>
+        </div>
+        <div class="input-field col s2">
+            <select>
+                <option value="1">AM</option>
+                <option value="2">PM</option>
+            </select>
+            <label>AM/PM</label>
+        </div>
+        <h6 class="col s2 offset-s1">End<br/>(optional):</h6>
+        <div class="input-field col s2 offset-s1">
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label>Hour</label>
+        </div>
+        <h4 class="col s1">:</h4>
+        <div class="input-field col s2">
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label>Minute</label>
+        </div>
+        <div class="input-field col s2">
+            <select>
+                <option value="1">AM</option>
+                <option value="2">PM</option>
+            </select>
+            <label>AM/PM</label>
+        </div>
+
+        <div class="card col s10 offset-s1">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Description</label>
+        </div>
+
+        <div class="card col s10 offset-s1">
+            <h5>Milestones</h5>
+            <ul class="collection with-header">
+                <li class="collection-item">
+                    <div class="collection-row row">
+                        <div class="input-field col s12">
+                            <input id="m-title-1" type="text" class="validate">
+                            <label for="m-title-1" data-error="wrong" data-success="right">Title</label>
+                        </div>
+                        <div class="input-field col s2" style="margin-top:0px">
+                            <input id="m-hrs-1" type="text" class="validate">
+                        </div>
+                        <h6 class="col s3">hrs. required</h6>
+                        <select class="col s6">
+                            <option value="1">Completed</option>
+                            <option value="0">Incomplete</option>
+                        </select>
+                        <a href="" onclick="" class="col s6">Delete Milestone</a>
+                        <a href="" onclick="" class="col s6 right-align">Add Milestone</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col s10 offset-s1 center-align">
+            <div class="row">
+                <a class="waves-effect white grey-text text-darken-2 btn"><i class="material-icons left green-text">done</i>Submit</a>
+                <a class="waves-effect white grey-text text-darken-2 btn"><i class="material-icons left red-text">clear</i>Cancel</a>
+            </div>
+            <div class="row">
+                <a class="waves-effect white grey-text text-darken-2 btn"><i class="material-icons left">delete_forever</i>Delete</a>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</div>

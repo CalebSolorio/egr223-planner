@@ -1,0 +1,12 @@
+[02-May-2016 05:35:39 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/PHP/user/registerAuth.php on line 42
+[02-May-2016 05:35:39 UTC] PHP Stack trace:
+[02-May-2016 05:35:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/PHP/user/registerAuth.php:0
+[02-May-2016 05:35:39 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/PHP/user/registerAuth.php:42
+[02-May-2016 05:36:56 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/PHP/GET/getEvent.php on line 54
+[02-May-2016 05:36:56 UTC] PHP Stack trace:
+[02-May-2016 05:36:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/PHP/GET/getEvent.php:0
+[02-May-2016 05:36:56 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/PHP/GET/getEvent.php:54
+[04-May-2016 21:58:22 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/ubuntu/workspace/PHP/user/registerAuth.php on line 42
+[04-May-2016 21:58:22 UTC] PHP Stack trace:
+[04-May-2016 21:58:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/PHP/user/registerAuth.php:0
+[04-May-2016 21:58:22 UTC] PHP   2. mysqli_fetch_assoc() /home/ubuntu/workspace/PHP/user/registerAuth.php:42

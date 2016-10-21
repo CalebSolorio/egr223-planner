@@ -1,0 +1,130 @@
+<div class="course-edit scroll-view"> 
+    <div class="row">
+        <div class="input-field col s10 offset-s1">
+            <input id="course-edit-name" type="text" class="validate m-bottom">
+            <label for="course-edit-name" data-error="wrong" data-success="right">Course Name</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s5 offset-s1">
+            <input id="course-edit-code" type="text" class="validate">
+            <label for="event-edit-code" data-error="wrong" data-success="right">Course Code</label>
+        </div>
+        <div class="input-field col s5">
+            <select id="course-edit-meeting-days" multiple>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="0">Sunday</option>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+            </select>
+            <label>Meeting Days</label>
+        </div>
+        <div class="input-field col s5 offset-s1">
+            <select id="course-edit-semester">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label>Semester</label>
+        </div>
+        <div class="card col s10 offset-s1">
+            <textarea id="course-edit-description" class="materialize-textarea"></textarea>
+            <label for="course-edit-description">Description</label>
+        </div>
+        
+        <div class="card col s10 offset-s1">
+            <div class="row m-bottom">
+                <h5 class="col s3">Color:</h5>
+                <a class="color-picked hoverable waves-effect waves-light card" style="background-color:#e53935"></a>
+            </div>
+            <div class="row m-bottom">
+                <div class="color-picker center-align">
+                    <div class="row">
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#e53935" onclick="changeColor('#e53935')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#d81b60" onclick="changeColor('#d81b60')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#8e24aa" onclick="changeColor('#8e24aa')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#5e35b1" onclick="changeColor('#5e35b1')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#039be5" onclick="changeColor('#039be5')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#00acc1" onclick="changeColor('#00acc1')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#00897b" onclick="changeColor('#00897b')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#43a047" onclick="changeColor('#43a047')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#fdd835" onclick="changeColor('#fdd835')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#ffb300" onclick="changeColor('#ffb300')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#fb8c00" onclick="changeColor('#fb8c00')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#f4511e" onclick="changeColor('#f4511e')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#6d4c41" onclick="changeColor('#6d4c41')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#546e7a" onclick="changeColor('#546e7a')"></a>
+                    </div>
+                    <div class="row">
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#d32f2f" onclick="changeColor('#d32f2f')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#c2185b" onclick="changeColor('#c2185b')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#7b1fa2" onclick="changeColor('#7b1fa2')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#512da8" onclick="changeColor('#512da8')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#0288d1" onclick="changeColor('#0288d1')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#0097a7" onclick="changeColor('#0097a7')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#00796b" onclick="changeColor('#00796b')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#388e3c" onclick="changeColor('#388e3c')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#fbc02d" onclick="changeColor('#fbc02d')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#ffa000" onclick="changeColor('#ffa000')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#f57c00" onclick="changeColor('#f57c00')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#e64a19" onclick="changeColor('#e64a19')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#5d4037" onclick="changeColor('#5d4037')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#455a64" onclick="changeColor('#455a64')"></a>
+                    </div>
+                    <div class="row">
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#c62828" onclick="changeColor('#c62828')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#ad1457" onclick="changeColor('#ad1457')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#6a1b9a" onclick="changeColor('#6a1b9a')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#4527a0" onclick="changeColor('#4527a0')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#0277bd" onclick="changeColor('#0277bd')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#00838f" onclick="changeColor('#00838f')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#00695c" onclick="changeColor('#00695c')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#2e7d32" onclick="changeColor('#2e7d32')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#f9a825" onclick="changeColor('#f9a825')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#ff8f00" onclick="changeColor('#ff8f00')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#ef6c00" onclick="changeColor('#ef6c00')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#d84315" onclick="changeColor('#d84315')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#4e342e" onclick="changeColor('#4e342e')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#37474f" onclick="changeColor('#37474f')"></a>
+                    </div>
+                    <div class="row">
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#b71c1c" onclick="changeColor('#b71c1c')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#880e4f" onclick="changeColor('#880e4f')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#6a1b9a" onclick="changeColor('#6a1b9a')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#311b92" onclick="changeColor('#311b92')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#01579b" onclick="changeColor('#01579b')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#006064" onclick="changeColor('#006064')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#004d40" onclick="changeColor('#004d40')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#1b5e20" onclick="changeColor('#1b5e20')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#f57f17" onclick="changeColor('#f57f17')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#ff6f00" onclick="changeColor('#ff6f00')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#e65100" onclick="changeColor('#e65100')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#bf360c" onclick="changeColor('#bf360c')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#3e2723" onclick="changeColor('#3e2723')"></a>
+                        <a class="color-box hoverable waves-effect waves-light card" style="background-color:#263238" onclick="changeColor('#263238')"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="col s10 offset-s1 center-align">
+            <div class="row">
+                <a class="waves-effect white grey-text text-darken-2 btn"><i class="material-icons left green-text">done</i>Submit</a>
+                <a class="waves-effect white grey-text text-darken-2 btn"><i class="material-icons left red-text">clear</i>Cancel</a>
+            </div>
+            <div class="row">
+                <a class="waves-effect white grey-text text-darken-2 btn"><i class="material-icons left">delete_forever</i>Delete</a>
+            </div>
+        </div>
+    </div><br/><br/><br/><br/><br/><br/><br/><br/> 
+</div>
